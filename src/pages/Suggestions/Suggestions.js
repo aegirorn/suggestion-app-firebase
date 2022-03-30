@@ -9,6 +9,7 @@ import { updateDocument } from "../../firestore/firestoreService";
 import { toggleSuggestionVoted } from "../../utils/suggestionUtils";
 
 import styles from "./Suggestions.module.css";
+import Spinner from "../../components/Spinner";
 
 const defaultFilters = {
   selectedCategory: "All",
@@ -26,7 +27,8 @@ const Suggestions = () => {
   const [showCategories, setShowCategories] = useState(false);
   const [showStatuses, setShowStatuses] = useState(false);
 
-  const { loggedInUser } = useAuthContext();
+  const { loggedInUser, authIsReady } = useAuthContext();
+
   const navigate = useNavigate();
 
   const { documents: approvedSuggestions } = useCollection(
@@ -259,6 +261,10 @@ const Suggestions = () => {
         return styles["suggestion-entry-status-none"];
     }
   };
+
+  if (loading) {
+    return <Spinner />;
+  }
 
   return (
     <>

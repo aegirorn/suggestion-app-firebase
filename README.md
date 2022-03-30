@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Tim Corey's Suggestions Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Purpose
 
-## Available Scripts
+This website is built as a clone of [Tim Corey's Suggestions website](https://suggestions.iamtimcorey.com/). It was made as a training excersise, to practice programming in React.
 
-In the project directory, you can run:
+## Tim Corey's course
 
-### `npm start`
+Mr. Tim Corey has kindly made a course public on YouTube, where he teaches how a real project that he actually uses himself, can be made using C#, .NET 6, Blazor Server, MongoDb and Azure Active Directory B2C.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Corey explains both the web application and his course in his first lecture on YouTube that can be seen here: [https://youtu.be/eEyAKk4NeSg](https://youtu.be/eEyAKk4NeSg).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## The Technology
 
-### `npm test`
+Apart from the obvious difference of using React instead of .NET here, we also have a different database and authentication system where Firebase replaces both MongoDb and Azure B2C. I found it a bit easier to work with Firebase than MongoDb in the contex of this application but Firebase also has some other things in it's favor. It is a "One Stop Shop" for a database, authentication and hosting. It also has the great feature of providing the option of listening to the data live so that changes in the database can be reflected immediately in the user's browser.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Credits
 
-### `npm run build`
+All the UI design here is Tim Corey's and most of the CSS that makes the website look good was created by him. He is also of course the author of the application logic and this website is therefore mostly a translation of that code and logic into the different context of the React/Javascript world.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I also might "borrow" some suggestions or data from the real, live website, to have the data here looking a bit less silly.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Making this website has been a great experience that I have learned a lot from doing.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## References
 
-### `npm run eject`
+- The playlist of this course can be found here on YouTube: [https://youtube.com/playlist?list=PLLWMQd6PeGY0cZFMqx5ijmdaD87sJKCsU](https://youtube.com/playlist?list=PLLWMQd6PeGY0cZFMqx5ijmdaD87sJKCsU).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- It is also possible to buy the full course at: [https://www.iamtimcorey.com/p/build-a-suggestion-site-app](https://www.iamtimcorey.com/p/build-a-suggestion-site-app).

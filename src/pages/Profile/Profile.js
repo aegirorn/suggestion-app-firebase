@@ -7,6 +7,7 @@ import { getUserSuggestions } from "../../firestore/firestoreService";
 import ProfileSuggestionList from "../../components/profile/ProfileSuggestionList";
 
 import styles from "./Profile.module.css";
+import Spinner from "../../components/Spinner";
 
 const Profile = () => {
   const [loading, setLoading] = useState(true);
@@ -59,23 +60,7 @@ const Profile = () => {
   };
 
   if (loading) {
-    return (
-      <>
-        <h1 className='page-heading text-uppercase mb-4'>My Profile</h1>
-        <Row>
-          <Col className='close-button-section'>
-            <Button
-              variant='btn'
-              className='btn-close'
-              onClick={handleCloseClick}
-            ></Button>
-          </Col>
-        </Row>
-        <div className={styles["suggestions-loading"]}>
-          <h5 className={styles["loading-text"]}>Loading suggestions ...</h5>
-        </div>
-      </>
-    );
+    return <Spinner />;
   }
 
   return (

@@ -9,6 +9,7 @@ import OwnerNotes from "../../components/OwnerNotes";
 import { useDocument } from "../../hooks/useDocument";
 
 import styles from "./Details.module.css";
+import Spinner from "../../components/Spinner";
 
 const Details = () => {
   const { id } = useParams();
@@ -185,7 +186,7 @@ const Details = () => {
   };
 
   if (isPending) {
-    return <h4>Loading...</h4>;
+    return <Spinner />;
   }
 
   if (!suggestion) {

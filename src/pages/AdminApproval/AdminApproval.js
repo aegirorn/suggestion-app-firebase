@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Button, Row, Col } from "react-bootstrap";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { updateDocument } from "../../firestore/firestoreService";
+import Spinner from "../../components/Spinner";
 
 import styles from "./AdminApproval.module.css";
 import { useCollection } from "../../hooks/useCollection";
@@ -109,25 +110,7 @@ const AdminApproval = () => {
   };
 
   if (loading) {
-    return (
-      <>
-        <h1 className='page-heading text-uppercase mb-4'>
-          Pending Submissions
-        </h1>
-        <Row>
-          <Col className='close-button-section'>
-            <Button
-              variant='btn'
-              className='btn-close'
-              onClick={handleCloseClick}
-            ></Button>
-          </Col>
-        </Row>
-        <div className={styles["suggestions-loading"]}>
-          <h5 className={styles["loading-text"]}>Loading submissions ...</h5>
-        </div>
-      </>
-    );
+    return <Spinner></Spinner>;
   }
 
   return (
