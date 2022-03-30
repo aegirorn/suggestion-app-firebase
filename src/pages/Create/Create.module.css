@@ -1,0 +1,74 @@
+.input-section {
+  margin-bottom: 2rem;
+}
+
+.input-description {
+  margin-bottom: 0.5rem;
+}
+
+.center-children {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-main {
+  color: #ffffff;
+  background-color: var(--primary-color);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  border-radius: 10px;
+  border-width: 3px;
+}
+
+.btn-main:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background-color: #ffffff;
+  border-width: 3px;
+}
+
+.radio-item-group {
+  margin: 0.5rem;
+}
+
+.radio-item-group input[type="radio"] {
+  display: none;
+}
+
+.radio-item-group label {
+  border-color: var(--primary-color);
+  border-width: 1px;
+  padding: 0.3rem 1.5rem;
+  border-radius: 10px;
+  width: 100%;
+  border-style: solid;
+}
+
+.radio-item-group input[type="radio"]:checked + label {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  width: 100%;
+  border: 1px var(--primary-color) solid;
+}
+
+@media screen and (max-width: 575px) {
+  .suggestion-entry {
+    grid-template-columns: 100px 1fr 45px;
+  }
+
+  .suggestion-entry-no-votes,
+  .suggestion-entry-voted,
+  .suggestion-entry-not-voted {
+    min-height: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .create-form,
+  .detail-form {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,176 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,700;1,900&display=swap");
+
+/* variables */
+:root {
+  --primary-color: #39bad8;
+  --completed-color: #b5d43a;
+  --watching-color: #e9354c;
+  --upcoming-color: #835581;
+  --dismissed-color: #f9c30b;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserat", sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+body {
+  background: url(../src/assets/SuggestionPageBackground.png) no-repeat center
+    center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+a,
+.btn-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover,
+.btn-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.nav-links {
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+.login-link {
+  padding-left: 1rem;
+}
+
+.rounded-control {
+  border-radius: 10px;
+}
+
+.page-heading {
+  text-align: center;
+}
+
+.form-layout {
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.primary-button {
+  font-family: "Montserrat", sans-serif;
+  border-width: 3px;
+  border-radius: 10px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: 900;
+}
+
+.btn-outline-light:hover {
+  color: var(--primary-color);
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.suggestions-count {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.btn:focus,
+.form-control:focus {
+  box-shadow: none;
+}
+
+label span {
+  display: block;
+  margin-bottom: 6px;
+}
+input,
+textarea {
+  padding: 8px 6px;
+  font-size: 1em;
+  color: #777;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+textarea {
+  min-height: 80px;
+}
+
+.error {
+  color: red;
+  background: pink;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 470px;
+  padding: 15px;
+  margin: auto;
+}
+
+.close-button-section {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+
+.sign-up-in-link {
+  margin-left: 15px;
+  padding-top: 2.5px;
+}
+
+.invalid {
+  outline: 1px solid red;
+}
+
+.validation-message {
+  color: red;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-links {
+    justify-content: center;
+  }
+
+  .login-link {
+    flex: 1;
+    padding-left: 0;
+  }
+
+  .form-layout {
+    padding: 1rem;
+  }
+}

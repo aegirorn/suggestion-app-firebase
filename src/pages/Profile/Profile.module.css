@@ -1,0 +1,51 @@
+.my-submission-heading {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.my-submission-text {
+  margin-bottom: 0;
+  padding-left: 1rem;
+}
+
+.my-submission-separator {
+  color: #a9a9a9;
+  height: 2px;
+  opacity: 1;
+}
+
+.profile-edit-link {
+  margin-bottom: 0;
+  padding-left: 1rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.profile-edit-text:hover {
+  color: var(--primary-color);
+  font-weight: 700;
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+
+.x-button {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+a:hover,
+.btn-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+.suggestions-loading {
+  background-color: #dddddd;
+  border-radius: 10px;
+  padding: 50px;
+  margin-top: 20px;
+}
+.loading-text {
+  color: #000000;
+}

@@ -1,0 +1,216 @@
+.suggestion-detail-row {
+  --bs-gutter-x: 0;
+}
+
+.suggestion-detail {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  padding: 0;
+}
+
+.suggestion-detail-date {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.suggestion-detail-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 27px;
+  padding-right: 10px;
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+.suggestion-detail-suggestion {
+  font-size: 1.25rem;
+}
+
+.suggestion-detail-author {
+  color: #a9a9a9;
+}
+
+.suggestion-detail-no-votes,
+.suggestion-detail-not-voted,
+.suggestion-detail-voted {
+  border: 3px solid var(--primary-color);
+  text-align: center;
+  line-height: 1rem;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.suggestion-detail-no-votes {
+  background-color: #dddddd;
+  color: #ffffff;
+  border-color: #dddddd;
+}
+
+.suggestion-detail-voted {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.suggestion-detail-not-voted {
+  background-color: #ffffff;
+  color: var(--primary-color);
+}
+
+.suggestion-entry-text-category {
+  text-transform: uppercase;
+  color: darkgray;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.detail-upvote {
+  font-size: 2.7rem;
+}
+
+.suggestion-results {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.suggestion-detail-status-complete {
+  background-color: var(--completed-color);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.suggestion-detail-status-watching {
+  background-color: var(--watching-color);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.suggestion-detail-status-upcoming {
+  background-color: var(--upcoming-color);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.suggestion-detail-status-dismissed {
+  background-color: var(--dismissed-color);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.suggestion-detail-status-none {
+  background-color: #ffffff;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.suggestion-detail-status-section {
+  padding: 1.5rem;
+}
+
+.suggestion-detail-status {
+  flex-grow: 1;
+}
+
+.suggestion-detail-owner-notes {
+  padding-bottom: 20px;
+}
+
+.can-vote {
+  cursor: pointer;
+}
+
+.cannot-vote {
+  cursor: default;
+}
+
+.suggestion-entry-bottom {
+  display: flex;
+}
+
+.btn-archive {
+  border: 0;
+  background-color: #ffffff;
+  padding: 0 10px;
+  flex: unset;
+}
+
+.btn-archive-confirm,
+.btn-archive-reject {
+  text-transform: uppercase;
+  color: darkgray;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  flex: 1;
+}
+
+.btn-archive-confirm {
+  color: var(--watching-color);
+}
+
+.admin-details {
+  margin-top: 20px;
+}
+
+.admin-set-statuses {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.btn-status-completed:hover {
+  color: var(--completed-color);
+}
+
+.btn-status-watching:hover {
+  color: var(--watching-color);
+}
+
+.btn-status-upcoming:hover {
+  color: var(--upcoming-color);
+}
+
+.btn-status-dismissed:hover {
+  color: var(--dismissed-color);
+}
+
+@media screen and (max-width: 767px) {
+  .detail-form {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .suggestion-results {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .admin-details {
+    margin-top: 0px;
+  }
+
+  .suggestion-detail-status-section {
+    padding: 0.5rem;
+  }
+
+  .suggestion-detail-suggestion {
+    font-size: 1rem;
+  }
+
+  .suggestion-detail-text {
+    padding-left: 12px;
+  }
+
+  .suggestion-entry-text-category {
+    padding-top: 0.5rem;
+  }
+}

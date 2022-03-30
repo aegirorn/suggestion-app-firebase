@@ -1,0 +1,19 @@
+.login-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+login-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.disabled-link,
+.disabled-link:hover {
+  color: #dddddd;
+  text-decoration: none;
+  padding-left: 1rem;
+  cursor: default;
+  pointer-events: none;
+}
