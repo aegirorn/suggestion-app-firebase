@@ -27,7 +27,7 @@ const Suggestions = () => {
   const [showCategories, setShowCategories] = useState(false);
   const [showStatuses, setShowStatuses] = useState(false);
 
-  const { loggedInUser, authIsReady } = useAuthContext();
+  const { loggedInUser } = useAuthContext();
 
   const navigate = useNavigate();
 
@@ -164,11 +164,11 @@ const Suggestions = () => {
       navigate("/login");
     }
 
-    if (suggestion.author.id === loggedInUser.id) {
+    if (suggestion.author.id === loggedInUser.uid) {
       // Can't vote on your own suggerstion
       return;
     }
-    suggestion = toggleSuggestionVoted(suggestion, loggedInUser.id);
+    suggestion = toggleSuggestionVoted(suggestion, loggedInUser.uid);
     await updateDocument("suggestions", suggestion);
   };
 
@@ -181,7 +181,7 @@ const Suggestions = () => {
   };
 
   const getUserCanVoteClass = (suggestion) => {
-    if (!loggedInUser || suggestion.author.id === loggedInUser.id) {
+    if (!loggedInUser || suggestion.author.id === loggedInUser.uid) {
       return styles["cannot-vote"];
     }
     return styles["can-vote"];
@@ -193,7 +193,7 @@ const Suggestions = () => {
       result = styles["suggestion-entry-no-votes"];
     } else if (
       loggedInUser &&
-      suggestion.userVotes.find((u) => u === loggedInUser.id)
+      suggestion.userVotes.find((u) => u === loggedInUser.uid)
     ) {
       result = styles["suggestion-entry-voted"];
     } else {

@@ -35,6 +35,9 @@ const Create = () => {
       rejected: false,
     };
 
+    console.log("loggedInUser: ", loggedInUser);
+    console.log("The new suggestion: ", newSuggestion);
+
     await addDocument("suggestions", newSuggestion);
 
     navigate("/");

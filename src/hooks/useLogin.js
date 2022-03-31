@@ -33,6 +33,7 @@ export const useLogin = () => {
         const currentUser = {
           ...docSnap.data(),
           email: res.user.email,
+          uid: res.user.uid,
         };
         setLoggedInUser(currentUser);
       } else {

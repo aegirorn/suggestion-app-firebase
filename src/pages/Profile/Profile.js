@@ -22,7 +22,7 @@ const Profile = () => {
 
   useEffect(() => {
     const getSuggestions = async () => {
-      const userSuggestions = await getUserSuggestions(loggedInUser.id);
+      const userSuggestions = await getUserSuggestions(loggedInUser.uid);
       setSuggestions(userSuggestions);
     };
 

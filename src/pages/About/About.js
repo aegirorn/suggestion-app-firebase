@@ -41,7 +41,7 @@ export const About = () => {
                 Active Directory B2C.
               </p>
               <p>
-                Corey explains both the web application and his course in his
+                Corey explains both the web application and his course in the
                 first lecture on YouTube that can be seen here:{" "}
                 <a
                   href='https://youtu.be/eEyAKk4NeSg'
@@ -64,6 +64,17 @@ export const About = () => {
                 feature of providing the option of listening to the data live so
                 that changes in the database can be reflected immediately in the
                 user&#39;s browser.
+              </p>
+              <p className='fw-bold'>Source Code</p>
+              <p>
+                The source code for the application is on Github:{" "}
+                <a
+                  href='https://github.com/aegirorn/suggestion-app-firebase'
+                  target='_blank'
+                  style={{ color: "#0d6efd" }}
+                >
+                  https://github.com/aegirorn/suggestion-app-firebase
+                </a>{" "}
               </p>
               <p className='fw-bold'>Credits</p>
               <p>

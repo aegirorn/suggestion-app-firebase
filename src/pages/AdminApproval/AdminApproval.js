@@ -20,8 +20,6 @@ const AdminApproval = () => {
   //const { user: loggedInUser } = useAuthContext();
 
   const { loggedInUser } = useAuthContext();
-  console.log("loggedInUser", loggedInUser);
-
   if (!loggedInUser) {
     navigate("/not-authorized");
   }

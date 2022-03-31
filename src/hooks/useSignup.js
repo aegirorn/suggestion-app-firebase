@@ -30,13 +30,12 @@ export const useSignup = () => {
       });
 
       const user = {
-        id: res.user.uid,
+        uid: res.user.uid,
         email: res.user.email,
         firstName,
         lastName,
         displayName,
         isAdmin: false,
-        uid: res.user.uid,
       };
 
       if (!isCancelled) {

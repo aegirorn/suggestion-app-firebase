@@ -19,13 +19,12 @@ export function AuthContextProvider({ children }) {
 
         const userData = await getDocById("users", user.uid);
         const currentUser = {
-          id: user.uid,
+          uid: user.uid,
           email: user.email,
           firstName: userData.firstName,
           lastName: userData.lastName,
           displayName: userData.displayName,
           isAdmin: userData.isAdmin,
-          uid: user.uid,
         };
         setLoggedInUser(currentUser);
       };
