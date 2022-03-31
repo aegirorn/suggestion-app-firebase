@@ -3,7 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Row, Col } from "react-bootstrap";
 
-export const About = () => {
+const About = () => {
   const navigate = useNavigate();
 
   const handleCloseClick = () => {
@@ -136,3 +136,5 @@ export const About = () => {
     </div>
   );
 };
+
+export default About;

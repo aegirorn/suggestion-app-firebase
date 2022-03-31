@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Row, Col } from "react-bootstrap";
 
-export const NotAuthorized = () => {
+const NotAuthorized = () => {
   const navigate = useNavigate();
 
   const handleCloseClick = () => {
@@ -36,3 +36,5 @@ export const NotAuthorized = () => {
     </div>
   );
 };
+
+export default NotAuthorized;
